@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  postgres:
+    image: 'sameersbn/postgresql:9.6-2'
+    ports:
+      - "5432:5432"
+    environment:
+      - DEBUG=false
+      - DB_USER=${DB_USER}
+      - DB_PASS=${DB_PASS}
+      - DB_NAME=${DB_NAME}
+    volumes:
+      - persistent:/var/lib/postgresql
+volumes:
+  persistent:

@@ -2,6 +2,8 @@
 source 'https://rubygems.org'
 
 gem 'activerecord'
+gem 'bcrypt'
+gem 'dotenv-rails'
 gem 'pg'
 gem 'sinatra'
 gem 'sinatra-activerecord'
